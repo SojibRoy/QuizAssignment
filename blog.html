@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Monster</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="title"><img src="./logo.png" /></h1>
+    <div class="box-container">
+      <div class="divider-container">
+        <div class="line"></div>
+          <h1 class="title2">Q/A</h1>
+        <div class="line"></div>
+        </div>
+        <div class="card2">
+            <h3 class="q-heading">1. What is the main difference between local storage and session storage?</h3>
+            <div class="ans-body">
+              <div>
+                <h4>Local Storage</h4>
+                <ul>
+                  <li>The storage capacity of local storage is 5MB/10MB</li>
+                  <li>There are fewer old browsers that support it</li>
+                  <li>The client  can only read local storage</li>
+                  <li>There is no transfer of data to the server</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Session Storage</h4>
+                <ul>
+                  <li>The storage capacity of session storage is 5MB</li>
+                  <li>There are fewer old browsers that support it</li>
+                  <li>The client can only read local storage</li>
+                  <li>There is no transfer of data to the server</li>
+                </ul>
+              </div>
+            </div>
+            
+        </div>
+        <div class="card2">
+            <h3 class="q-heading">2. What is the main difference between Global Scope and Block Scope?</h3>
+            <div class="ans-body">
+              <div>
+                <h4>Global Scope</h4>
+                <ul>
+                  <li>A variable declared outside a function, becomes GLOBAL.</li>
+                  <li>Global variables can be accessed from anywhere in a JavaScript program.</li>
+                  <li>If you assign a value to a variable that has not been declared,is a Global variable </li>
+             
+                </ul>
+              </div>
+              <div>
+                <h4>Block Scope</h4>
+                <ul>
+                  <li>Variables declared inside a { } block cannot be accessed from outside the block</li>
+                  <li>Let & const are also called as block scope that is they are accessible within that particular block.</li>
+                  <li>A block scope will be the same as a function scope</li>
+               
+                </ul>
+              </div>
+            </div>
+            
+        </div>
+        <div class="card2">
+            <h3 class="q-heading">3. How does JS event loops works?</h3>
+           <p class="ans-para">
+            The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+           </p>
+            
+        </div>
+        <div class="card2">
+            <h3 class="q-heading">4. How we can get undefine?</h3>
+            <div class="ans-para">
+           <ul>
+            <li>
+              <h4>Strict equality and undefined</h4>
+              You can use undefined and the strict equality and inequality operators to determine whether a variable has a value. In the following code, the variable x is not initialized, and the if statement evaluates to true.</li>
+              <li>
+                <h4>typeof operator and undefined</h4>
+                One reason to use typeof is that it does not throw an error if the variable has not been declared.
+              </li>
+              <li><h4>void operator and undefined</h4></li>
+         
+           </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="countdown"></div>
+    <div id="modal-background" class="hidden"></div>
+    <div id="result" class="hidden"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
